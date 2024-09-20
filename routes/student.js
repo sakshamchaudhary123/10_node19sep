@@ -7,6 +7,10 @@ router.get('/', (req, res)=> {
     res.render('home');
 });
 
+router.get('/add/user', (req, res)=> {
+    res.render('home');
+});
+
 router.post('/add/student', (req, res)=>{
     studentcontroller.addStudent(req, res);
 })
