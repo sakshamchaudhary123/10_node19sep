@@ -1,4 +1,5 @@
 const mongoose = require('mongoose'); // calling mongoose library 
+const router = require('../routes/student');
 const Schema = mongoose.Schema;  // calling Schema from mongoose library . A schema is a blueprint for defining the structure of the documents that you store in a MongoDB collection.
 const StudentSchema = new Schema({  // creating a new schema
     rollNo: {type: String , required: true},
